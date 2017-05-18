@@ -1,0 +1,50 @@
+<script type="text/x-red" data-template-name="Gather">
+  <div class="form-row">
+    <label for="node-input-name">
+      <i class="fa fa-tag"></i> Name
+    </label>
+    <input type="text" id="node-input-name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="Gather">
+  <p>When paired with the <b>scatter node</b>, it will automatically collect the responses from all nodes, and aggregates them into a single message.</p>
+  <h3>Inputs</h3>
+  <dl class="message-properties">
+    <dt>Name</dt>
+    <dd>Custom name</dd>
+  </dl>
+  <h3>Outputs</h3>
+  <ol class="node-ports">
+     <li>
+       Standard output
+       <dl class="message-properties">
+         <dt>Payload</dt>
+         <dd>The responses from all nodes aggregated into a single message</dd>
+       </dl>
+     </li>
+  </ol>
+  <h3>Details</h3>
+  <p>The result is returned in <code>msg.payload</code>.</p>
+</script>
+
+<script type="text/javascript">
+  (function() {
+		RED.nodes.registerType('Gather', {
+			category: 'flow control',
+      icon: 'serial.png',
+			color:'#D8BFD8',
+      inputs: 1,
+			outputs: 1,
+      defaults: {
+        name: { value: '' }
+			},
+			label: function() {
+				return this.name || ('Gather');
+			},
+			labelStyle: function() {
+				return this.name ? 'node_label_italic': '';
+			}
+		});
+  })();
+</script>
