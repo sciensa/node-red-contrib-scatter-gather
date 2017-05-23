@@ -91,7 +91,6 @@ describe('gather node', () => {
             gather.emit('input', { source: 'pokemons', payload: { pokemon: 'charmander' } });
 
             expect(send).to.have.been.calledWith({
-              source: 'pokemons',
               payload: {
                 ninjas: { ninja: 'naruto' },
                 pokemons: { pokemon: 'charmander' },
