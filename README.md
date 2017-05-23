@@ -28,7 +28,7 @@ Sends a request message to multiple nodes concurrently, and aggregates them into
 
 ##### 2. Go to the project directory
 
-    $ cd node-red-contrib-br-validations
+    $ cd node-red-contrib-scatter-gather
 
 ##### 3. Install the dependencies
 
@@ -42,7 +42,7 @@ Sends a request message to multiple nodes concurrently, and aggregates them into
 
     $ npm link
     
-##### 6. Run the node-red and enjoy!
+##### 6. Run the node-red and enjoy the new node!
 
 ## Contributing
 
