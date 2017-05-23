@@ -12,20 +12,6 @@ Requires [Node-Red](http://nodered.org) version 0.16.2 or more recent.
 
 ## Installation
 
-Add this line to your package.json file:
-
-```json
-"dependencies": {
-  "node-red-contrib-scatter-gather": "0.1.0"
-}
-```
-
-And then execute:
-
-    $ npm install
-
-Or install it yourself as:
-
     $ npm i -S node-red-contrib-scatter-gather
 
 ## Usage
@@ -36,7 +22,27 @@ Sends a request message to multiple nodes concurrently, and aggregates them into
 
 ## Development
 
-After checking out the repo, run `npm install` to install dependencies. Then, run `npm run test:unit` to run the tests.
+##### 1. Clone the project
+
+    $ git clone https://github.com/sciensa/node-red-contrib-scatter-gather.git
+
+##### 2. Go to the project directory
+
+    $ cd node-red-contrib-br-validations
+
+##### 3. Install the dependencies
+
+    $ npm install
+
+##### 4. Run the unit tests
+
+    $ npm run test:unit
+
+##### 5. Link the project
+
+    $ npm link
+    
+##### 6. Run the node-red and enjoy!
 
 ## Contributing
 
