@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-scatter-gather",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Executes nodes in parallel following the scatter/gather pattern",
   "repository": {
     "type": "git",
