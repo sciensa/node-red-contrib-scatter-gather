@@ -17,6 +17,9 @@ module.exports = (RED) => {
         data[key] = msg.payload;
         if (Object.keys(data).length === total) {
           msg.payload = data;
+          if (msg.source) {
+            delete msg.source;
+          }
           node.send(msg);
         }
       }

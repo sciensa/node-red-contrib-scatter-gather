@@ -8,9 +8,4 @@ rules:
   semi: 2
   import/no-extraneous-dependencies: [error, { devDependencies: true }]
 globals:
-  describe: true
-  it: true
   expect: true
-  app: true
-  request: true
-  beforeEach: true
