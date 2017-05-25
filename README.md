@@ -1,3 +1,7 @@
+# DEPRECATED
+
+We recommend using the [Join](https://github.com/Chris1234567899/node-red-contrib-join) node instead.
+
 # node-red-contrib-scatter-gather
 
 Executes [Node-Red](http://nodered.org) nodes in parallel following the [scatter/gather](http://www.enterpriseintegrationpatterns.com/patterns/messaging/BroadcastAggregate.html) pattern.
